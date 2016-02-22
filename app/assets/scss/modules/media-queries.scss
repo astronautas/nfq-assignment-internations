@@ -1,0 +1,11 @@
+@mixin respond-to-mobiles() {
+  @media only screen and (max-width: 479px) { @content; }
+}
+
+@mixin respond-to-big-mobiles() {
+  @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+}
+
+@mixin respond-to-tablets() {
+  @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
+}

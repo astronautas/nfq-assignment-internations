@@ -1,0 +1,27 @@
+/* Users Management System (NFQ Front-end advanced challenge)
+ * Author: Lukas Valatka
+ */
+
+// Libraries
+@import "libs/normalize";
+
+// Base (stylesheets without dependencies)
+@import "base/colors";
+@import "base/fonts";
+
+// Modules
+@import "modules/media-queries";
+
+// Partials
+@import "partials/buttons";
+@import "partials/header";
+
+.content {
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,22 @@
+.action-button {
+  background: $color-white;
+  padding: 10px;
+  border: 1px solid $color-red;
+  color: $color-red;
+
+  &:hover {
+    background: $color-red;
+    color: $color-white;
+  }
+}
+
+.action-button--success {
+   background: $color-white;
+   color: $color-green;
+   border: 1px solid $color-green;
+
+   &:hover {
+    background: $color-green;
+    color: $color-white;
+   }
+}
