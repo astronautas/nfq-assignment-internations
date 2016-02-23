@@ -13,6 +13,13 @@ To open the application, go to /dist directory and open index.html with a browse
 
 The app saves data localy in Local Storage (thus works offline). It is memory optimized too.
 
+### Backend APIs ideas:
+The application is purely front-end at the moment. For a fully featured user management system, back-end should provides APIS such as:
+* GET user (id, with cookie), group (id), users, groups
+* POST user (new user), group (new group), new session (login)
+* PATCH user (update user), group (update group)
+* DELETE user, group, session
+
 ### Technologies:
 * HTML5
 * CSS3
