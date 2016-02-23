@@ -1,5 +1,5 @@
 ({
   mainConfigFile : '../app.js',
-  out            : '../app-built.js',
+  out            : '../../../../dist/assets/js/app-built.js',
   name           : 'app',
 })

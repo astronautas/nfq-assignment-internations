@@ -2,11 +2,11 @@
 
 requirejs.config({
   paths: {
-    'jquery'        : 'https://code.jquery.com/jquery-1.12.0.min',
-    'backbone'      : 'https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min',
-    'underscore'    : 'libs/underscore',
-    'text'          : 'libs/text',
-    'localstorage'  : 'https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.16/backbone.localStorage-min',
+    'jquery'         : 'libs/jquery',
+    'backbone'       : 'libs/backbone',
+    'underscore'     : 'libs/underscore',
+    'text'           : 'libs/text',
+    'localstorage'   : 'libs/backbone-localStorage',
     'backbone-judge' : 'libs/backbone-judge.min'
   },
 });
