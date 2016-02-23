@@ -4,9 +4,11 @@ NFQ Front-end assignment for Internations team.
 To open the application, go to /dist directory and open index.html with a browser.
 
 ### Features
+* Show all users
+* Show all groups
 * Add users
 * Add groups
-* Edit users (change name, add, remove from groups, delete)
+* Edit users (change name, add to group(s), remove from group(s), delete)
 * Edit groups (change name, delete (if it has no users))
 
 The app saves data localy in Local Storage (thus works offline). It is memory optimized too.
