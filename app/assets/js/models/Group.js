@@ -16,9 +16,7 @@ define(['backbone', 'backbone-judge'], function (Backbone) {
     // to be rendered when adding new User
     newItemAttrs: function newItemAttrs() {
       return ['name'];
-    },
-
-    initialize: function initialize() {}
+    }
   });
 
   return GroupModel;

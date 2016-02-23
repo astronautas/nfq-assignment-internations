@@ -2,7 +2,7 @@
 
 define(['jquery', 'backbone', 'underscore', 'views/users/UsersList'], 
 function($, Backbone, _, UsersListView) {
-  var UsersPageView = Backbone.View.extend({
+  let UsersPageView = Backbone.View.extend({
     template: _.template('<h1 class="page-title">Users</h1><div class="page-list js-users"></div>'),
 
     initialize: function() {

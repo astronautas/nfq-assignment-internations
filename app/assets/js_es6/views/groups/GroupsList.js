@@ -21,7 +21,7 @@ function(Backbone, _, GroupsCollection, GroupItemView) {
     },
 
     addOne: function(model) {
-      var groupItem = new GroupItemView({ model: model });
+      let groupItem = new GroupItemView({ model: model });
       this.children.push(groupItem);
       this.$el.append(groupItem.$el);
     },

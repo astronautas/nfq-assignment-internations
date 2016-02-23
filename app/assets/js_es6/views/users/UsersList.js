@@ -21,7 +21,7 @@ function(Backbone, _, UsersCollection, UserItemView) {
     },
 
     addOne: function(model) {
-      var userItem = new UserItemView({ model: model });
+      let userItem = new UserItemView({ model: model });
       this.children.push(userItem);
       this.$el.append(userItem.$el);
     },

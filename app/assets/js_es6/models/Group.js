@@ -17,9 +17,6 @@ define(['backbone','backbone-judge'], function(Backbone) {
     newItemAttrs: function() {
       return ['name'];
     },
-
-    initialize: function() {
-    },
   });
 
   return GroupModel;
