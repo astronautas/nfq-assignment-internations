@@ -11,7 +11,7 @@ function(Backbone, _, UsersCollection, UserItemView) {
       this.listenTo(this.collection, 'reset', this.addAll);
       this.listenTo(this.collection, 'add', this.addOne);
 
-      this.collection.fetch();
+      this.collection.fetch({ reset: true });
     },
 
     addAll: function() {
@@ -21,9 +21,17 @@ function(Backbone, _, UsersCollection, UserItemView) {
     },
 
     addOne: function(model) {
-      let userItem = new UserItemView({ model: model });
+      var userItem = new UserItemView({ model: model });
       this.children.push(userItem);
       this.$el.append(userItem.$el);
+    },
+
+    close: function() {
+      for (let child of this.children) {
+        child.close ? child.close() : child.remove();
+      }
+
+      this.remove();
     }
   });
 

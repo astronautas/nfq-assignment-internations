@@ -8,6 +8,7 @@
 // Base (stylesheets without dependencies)
 @import "base/colors";
 @import "base/fonts";
+@import "base/positioning";
 
 // Modules
 @import "modules/media-queries";
@@ -15,6 +16,11 @@
 // Partials
 @import "partials/buttons";
 @import "partials/header";
+@import "partials/containers";
+
+body {
+  color: #222;
+}
 
 .content {
   max-width: 960px;

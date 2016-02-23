@@ -3,11 +3,18 @@
   padding: 10px;
   border: 1px solid $color-red;
   color: $color-red;
+  cursor: pointer;
+  transition: background-color 0.1s ease-out;
 
   &:hover {
     background: $color-red;
     color: $color-white;
   }
+}
+
+.action-button.clicked {
+  background: $color-red;
+  color: $color-white;
 }
 
 .action-button--success {
@@ -19,4 +26,9 @@
     background: $color-green;
     color: $color-white;
    }
+}
+
+.action-button--success.clicked {
+  background: $color-green;
+  color: $color-white;  
 }

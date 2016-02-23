@@ -7,11 +7,10 @@ function($, Backbone, _, UsersListView) {
 
     initialize: function() {
       _.bindAll(this, 'render');
-
-      this.usersList = new UsersListView();
-      this.children  = [this.usersList];
-
       this.render();
+
+      this.usersList = new UsersListView({ el: '.js-users' });
+      this.children  = [this.usersList];
     },
 
     render: function() {
@@ -19,6 +18,10 @@ function($, Backbone, _, UsersListView) {
     },
 
     close: function() {
+      for (let child of this.children) {
+        child.close ? child.close() : child.remove();
+      }
+
       this.remove();
     }
   });

@@ -1,0 +1,7 @@
+<div class="form-content">
+  <h1 class="page-title">Add <%= name %></h1>
+  <% _.each(attrs, function(attr) { %>
+    <input placeholder="<%= attr.charAt(0).toUpperCase() + attr.substring(1).toLowerCase() %>" class="full-width m-bottom" name="<%= attr %>">
+  <% }); %>
+  <div class="text-center"><div class="action-button action-button--success inline-block js-submit">Submit</div></div>
+</div>

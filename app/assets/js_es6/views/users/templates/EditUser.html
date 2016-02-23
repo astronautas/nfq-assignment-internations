@@ -1,0 +1,13 @@
+<label>Name: </label>
+<input class="full-width m-bottom" name="name" value="<%= name %>">
+<div class="full-width m-bottom">
+  <% _.each(allGroups, function(group) { %>
+    <% if (_.contains( userGroups, group.get('id') )) { %>
+      <input type="checkbox" checked name="group" value="<%= group.get('id') %>"> <%= group.get('name') %>
+    <% } else { %>
+      <input type="checkbox" name="group" value="<%= group.get('id') %>"> <%= group.get('name') %>
+    <% } %>
+  <% }); %>
+</div>
+<div class="m-bottom"><input class="js-delete-user" type="checkbox" name="delete_user"> Delete user?</div>
+<div class="text-center"><div class="action-button action-button--success js-update">Update user</div></div>
